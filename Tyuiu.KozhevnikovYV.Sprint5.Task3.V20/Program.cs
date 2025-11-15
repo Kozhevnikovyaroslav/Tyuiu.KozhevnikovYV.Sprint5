@@ -1,0 +1,24 @@
+﻿using System.IO;
+using Tyuiu.KozhevnikovYV.Sprint5.Task3.V20.Lib;
+DataService ds = new DataService();
+int x = 3;
+
+Console.Title = "Спринт 5 | Выполнил: Кожевников Я. В. | ПКТб-25-1";
+Console.WriteLine("********************************************************************************");
+Console.WriteLine("* Спринт #5                                                                    *");
+Console.WriteLine("* Тема: Базовые навыки работы в C#                                             *");
+Console.WriteLine("* Задание #0                                                                   *");
+Console.WriteLine("* Вариант #1                                                                   *");
+Console.WriteLine("* Выполнил: Кожевников Ярослав Вадимович | ПКТб-25-1                           *");
+Console.WriteLine("********************************************************************************");
+Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                             *");
+Console.WriteLine("********************************************************************************");
+Console.WriteLine("F(x) = x / sqrt(x^2 + x)");
+Console.WriteLine("X = " + x);
+Console.WriteLine("********************************************************************************");
+Console.WriteLine("* РЕЗУЛЬТАТ:                                                                   *");
+Console.WriteLine("********************************************************************************");
+string res = ds.SaveToFileTextData(x);
+Console.WriteLine("Файл " + res);
+Console.WriteLine("Создан!");
+Console.ReadKey();
