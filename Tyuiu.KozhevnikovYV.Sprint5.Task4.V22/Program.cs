@@ -1,0 +1,24 @@
+﻿using System.IO;
+using Tyuiu.KozhevnikovYV.Sprint5.Task4.V22.Lib;
+DataService ds = new DataService();
+Console.Title = "Спринт 5 | Выполнил: Кожевников Я. В. | ПКТб-25-1";
+Console.WriteLine("********************************************************************************");
+Console.WriteLine("* Спринт #5                                                                    *");
+Console.WriteLine("* Тема: Базовые навыки работы в C#                                             *");
+Console.WriteLine("* Задание #0                                                                   *");
+Console.WriteLine("* Вариант #1                                                                   *");
+Console.WriteLine("* Выполнил: Кожевников Ярослав Вадимович | ПКТб-25-1                           *");
+Console.WriteLine("********************************************************************************");
+Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                             *");
+Console.WriteLine("********************************************************************************");
+Console.WriteLine("(5x + 2,5 / sin(x) + 2) + 2x + 2");
+Console.WriteLine("Диапазон: [-5; 5]");
+Console.WriteLine("********************************************************************************");
+Console.WriteLine("* РЕЗУЛЬТАТ:                                                                   *");
+Console.WriteLine("********************************************************************************");
+string dir = @"C:\DataSprint5";
+string fileName = "InPutDataFileTask4V22.txt";
+string pyt = Path.Combine(dir, fileName);
+double res = ds.LoadFromDataFile(pyt);
+Console.WriteLine(res);
+
