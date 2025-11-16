@@ -13,7 +13,7 @@
             {
                 Console.WriteLine("нипалучилос");
             }
-            double res = Math.Pow(x, 3) * Math.Sin(x) - 4 * x;
+            double res = (Math.Sin(x) + 4) / x - 1.25 * x;
             res = Math.Round(res, 3);
             return res;
 
