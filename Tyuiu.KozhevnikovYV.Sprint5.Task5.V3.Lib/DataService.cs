@@ -16,8 +16,9 @@ namespace Tyuiu.KozhevnikovYV.Sprint5.Task5.V3.Lib
 
             foreach (string part in parts)
             {
-                if (double.TryParse(part,NumberStyles.Any,CultureInfo.InvariantCulture,out double x))
+                if (int.TryParse(part, out int number))
                 {
+                    double x = Convert.ToDouble(number);
                     sum += x;
                 }
             }
